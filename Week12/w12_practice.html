@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let n1 = prompt("Enter a number: ", 1);
+        let n2 = prompt("Enter a number: ", 2);
+        n1 = Number(n1);
+        n2 = Number(n2);
+        if(n1 > n2) {
+            let op = prompt("Enter an operand", "+");
+            let result;
+            if(op == "+") {
+                result = n1 + n2;
+            } else if(op == "-") {
+                result = n1 - n2;
+            } else if(op == "*") {
+                result = n1 * n2;
+            } else if(op == "/") {
+                result = n1 / n2;
+            } else {
+                result = "Error";
+            }
+            alert("The result is " + result);
+        } else if(n1 < n2) {
+            let m1 = n1 % 2;
+            let m2 = n2 % 2;
+            if (m1 == 1) {
+                if(m1 == m2) {
+                    alert("The numbers are odd!");
+                }
+                else {
+                    alert("The first number is odd, and the second number is even!");
+                }
+            } else {
+                if(m1 == m2) {
+                    alert("The numbers are even!");
+                } else {
+                    alert("The first number is even, and the second number is odd!");
+                }
+            }
+        } else {
+            alert("The numbers are the same!");
+            let sum = 0, tmp = 0;
+            for(var i = 1; i < 6; i++) {
+                tmp = prompt("Enter the "+ i +" number:", i);
+                tmp = Number(tmp);
+                sum += tmp;
+            }
+            alert("The final number is " + sum);
+        }
+    </script>
+</body>
+</html>

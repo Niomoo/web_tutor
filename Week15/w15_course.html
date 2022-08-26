@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // return 用來結束函式
+        /*
+        function test() {
+            console.log("Hello!");
+            return 3;
+        }
+        let value = test();
+        console.log(value);
+        */
+
+        // 第1種寫法
+        function divide(n1, n2) {
+            let result = n1 / n2;
+            console.log(result);
+        }
+        divide(4, 2);
+
+        // 第2種寫法
+        function divide(n1, n2) {
+            let result = n1 / n2;
+            return result;
+        }
+        let value = divide(4, 2);
+        console.log(value);
+        
+    </script>
+</body>
+</html>

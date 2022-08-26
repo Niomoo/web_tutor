@@ -1,0 +1,16 @@
+div {
+    font-family: 'Open Sans', sans-serif;
+}
+#pets {
+    font-size: 20px;
+}
+.title {
+    color: #480cee;
+}
+.content {
+    width: 400px;
+    background-color: rgb(243, 186, 186);
+    border: 5px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}

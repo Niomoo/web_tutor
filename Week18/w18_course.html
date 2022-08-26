@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 新的寫法
+        function Person(name, age, gender, love) {
+            this.name = name;
+            this.like = love;
+            this.age = age;
+            this.gender = gender;
+            this.talk = function() {
+                console.log("大家好，我叫"+ this.name + "今年" + this.age + "歲");
+            }
+        }
+        let personA = new Person("John", 15, "male", "run");
+        let personB = new Person("Amy", 17, "female", "basketball");  
+        let personC = new Person("Charlie", 12, "male", "ice cream");
+
+        personA.talk();
+        personB.talk();
+        personC.talk();
+
+        /* 舊的寫法
+        let studentA = new Object();
+        studentA.name = "John";
+        studentA.age = 15;
+        studentA.gender = "male";
+        studentA.talk = function(){
+            console.log("大家好，我叫"+ this.name);
+        }
+
+        let studentB = new Object();
+        studentB.name = "Amy";
+        studentB.age = 17;
+        studentB.gender = "female";
+        studentB.talk = function(){
+            console.log("大家好，我叫"+ this.name);
+        }
+        */
+    </script>
+</body>
+
+</html>

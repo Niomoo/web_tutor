@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        // 建立物件
+        let man = new Object();     // 建立空白物件
+        man.age = 18;               // 物件.成員名稱 = 資料
+        man.name = "小明"
+        man.talk = function(){
+            // 物件的方法中，使用 this ，代表物件本身
+            console.log("Hello 我是", this.name, "年齡", this.age);
+        }
+        // 使用物件
+        console.log(man);
+        console.log(man.age > 20);
+        man.talk();                 // 呼叫物件的方法
+        */
+        let student = new Object();
+        student.name = "John";
+        student.age = 15;
+        student.gender = "male";
+        student.like = "ice cream";
+        student.graduate = false;
+        student.talk = function(){
+            console.log("大家好，我叫"+ this.name);
+            if(this.graduate == false) {
+                console.log("我還沒畢業");
+            } else {
+                console.log("我畢業了");
+            }
+        }
+        console.log(student);
+        console.log(student.age < 20);
+        student.talk();
+
+        /*
+        // 使用 JSON 建立物件
+        let man = {
+            age:15,
+            name: "小芬",
+            talk: function(){
+                console.log("Hello 我是", this.name, "年齡", this.age);
+            }
+        };
+        console.log(man);
+        console.log(man.age > 20);
+        man.talk();
+        */
+
+        let studentA = {
+            name: "John", 
+            age: 15, 
+            gender: "male", 
+            like: "ice cream", 
+            graduate: false, 
+            talk: function(){
+                console.log("大家好，我叫" + this.name);
+                if (this.graduate == false) {
+                    console.log("我還沒畢業");
+                } else {
+                    console.log("我畢業了");
+                }
+            }
+        }
+
+        console.log(studentA);
+        console.log(studentA.age < 20);
+        studentA.talk();
+
+    </script>
+</body>
+</html>

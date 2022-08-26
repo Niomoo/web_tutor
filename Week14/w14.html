@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function look(money){
+            alert("目前餘額為" + money);
+            return money;
+        }
+        var money = 10000;
+        while(true){
+            var action = prompt("Enter an action(1: 提款, 2: 存款, 3:查看):", "");
+            if(action == "1"){
+                var input = Number(prompt("提款金額:", ""));
+                if(input < 100 ){
+                    alert("金額太小無法領取");
+                }else if(input <= money){
+                    money = money - input;
+                    // alert("餘額為" + a);
+                    look(money);
+                }else{
+                    alert("餘額不足");
+                }
+            }else if(action == "2") {
+                var b = Number(prompt("請輸入存款金額:", ""));
+                money = money + b;
+                // alert("餘額為" + c);
+                look(money);
+            }else if(action == "3"){
+                look(money);
+            }else{
+                alert("Error");
+            }
+        }
+    </script>
+</body>
+</html>

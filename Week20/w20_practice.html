@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // practice 1
+        let grades = [50, 75, 69, 82, 93];
+        let add = 0;
+        for(let i = 0; i < grades.length; i++) {
+            add += grades[i];
+        }
+        console.log(grades);
+        console.log(add / grades.length);
+        
+        // practice 2 & 3
+        let arr = [];
+        let arr1 = [];
+        let total = 0;
+        for(let i = 1;i <= 5; i++) {
+            arr.push(i*10);
+            total += arr[i - 1];
+            arr1.push(total);
+            console.log(arr);
+        }
+        console.log(arr1);
+
+        // homework
+        let flag = false;
+        let num = [];
+        let sum = 0;
+        while(!flag) {
+            let n = Number(prompt("Enter a number", ""));
+            if(n == 0) {
+                flag = true;
+                alert("The first number is " + num[0] + " and the last number is " + num[num.length - 1]);
+                alert("The average is " + sum / num.length);
+            } else {
+                num.push(n);
+                sum += n;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function withdraw(total, money) {
+            if(money < 100) {
+                alert("金額太小，無法領取！");
+                return total;
+            } else if(money <= total) {
+                alert("成功！餘額為 " + (total - money) + " 元");
+                return total-money;
+            } else {
+                alert("存款不足，無法領取！");
+                return total;
+            }
+        }
+        function deposit(total, money) {
+            alert("成功！餘額為 " + (total + money) + " 元");
+            return (total + money);
+        }
+        var totalMoney = 10000;
+        while(true){
+        var action = prompt("輸入動作：（1: 提款、2: 存款、3: 查詢餘額）");
+        if(action == "1") {
+            var m = Number(prompt("請輸入提款金額：", ""));
+            totalMoney = withdraw(totalMoney, m);
+        } else if(action == "2") {
+            var m = Number(prompt("請輸入存款金額：", ""));
+            totalMoney = deposit(totalMoney, m);
+        } else if(action == "3") {
+            alert("目前餘額為：" + totalMoney + " 元");
+        } else {
+            alert("輸入錯誤！");
+        }}
+    </script>
+</body>
+</html>

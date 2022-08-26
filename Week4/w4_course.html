@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4 - html</title>
+  <style>
+      body {
+          font-family: 'Helvetica Neue',Helvetica,Arial;
+      }
+      #title {
+          font-size: 36px;
+      }
+      .content {
+          background-color: rgb(250, 250, 134);
+      }
+      div.content {
+          border: 2px dashed rgb(60, 57, 223);
+          text-align: left;
+      }
+      #btn:hover {
+          background-color: #000000;
+          color: white;
+          border-radius: 5px;
+      }
+      input:focus {
+          border: 2px solid red;
+      }
+      .content a {
+        background-color: #eba8a8;
+      }
+      .content li {
+          background-color: rgb(157, 243, 243);
+          text-transform: uppercase;
+      }
+      table, th, td {
+          margin-top: 20px;
+          width: 300px;
+          padding: 5px;
+      }
+      table {
+          border-collapse: collapse;
+          text-align: center;
+      }
+      tr:nth-child(even) { /* odd: 奇數 */
+          background-color: #d1d0d0;
+      }
+      tr:nth-child(1) {
+          background-color: rgb(228, 171, 171);
+      }
+      th, td {
+          border-bottom: 1px solid #353333;
+      }
+  </style>
+</head>
+<body>
+    <h3 id="title">自我介紹</h3>
+    <div class="content">
+        大家好，我是OOO。
+    </div>
+    <h3>我的最愛</h3>
+    <ul class="link">
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+    </ul>
+    <h3>我的興趣</h3>
+    <ul class="content">
+        <li>打籃球</li>
+        <li>聽音樂</li>
+        <li>aaaaa</li>
+        <li>aaaa</li>
+    </ul>
+    <h3>和我聯絡</h3>
+    <div class="content">
+        想說的話：<input type="text"/> <button id="btn">送出</button>
+    </div>
+    <div class="score">
+        <table>
+            <caption>我的成績</caption>
+            <tr>
+                <th>科目</th>
+                <th>分數</th>
+                <th>排名</th>
+            </tr>
+            <tr>
+                <td>國文</td>
+                <td>90</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>數學</td>
+                <td>98</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>英文</td>
+                <td>75</td>
+                <td>19</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pet{
+    color: rgb(93, 133, 168);
+    font-size: 20px;
+    margin-left: 10px;
+}
+#pets{
+    color: rgb(41, 141, 58);
+    font-size: 28px;
+    text-align: center;
+    background-color: rgb(253, 212, 166);
+    width: 526px;
+    margin: 10px;
+    padding: 5px 0px;
+}
+.box{
+    margin: 15px 10px;
+    border:3px solid rgb(87, 77, 231);
+    padding: 10px;
+    background-color: rgb(189, 217, 243);
+    width: 500px;
+}

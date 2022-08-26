@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let studentA = {
+            name: "Amy",
+            age: 28,
+            gender:"female",
+            talk: function(){
+                console.log("我是" + this.name + "今年" + this.age);
+            }
+        }
+        studentA.talk();
+        let studentB = {
+            name: "Jason",
+            age: 25,
+            gender: "male",
+            talk: function(){
+                console.log("我是" + this.name + "今年" + this.age + "歲");
+            }
+            }
+        studentB.talk();
+        let studentC = {
+            name:"Charile",
+            age: 17,
+            gender: "male",
+            talk: function(){
+                console.log("我是" + this.name + "今年" + this.age + "歲");
+            }
+        }
+        studentC.talk();
+        let studentD = {
+            name:"Marry",
+            age: 33,
+            gender: "female",
+            graduate: false,
+            talk: function(){
+                console.log("我是" + this.name + "今年" + this.age + "歲");
+            }
+        }
+        studentD.talk();
+        let older = "";
+        if(studentA.age > studentB.age){
+            older = studentA.name;
+        }
+        console.log("年紀最大的是" + this.name + "他今年" + this.age);
+
+    </script>
+</body>
+</html>

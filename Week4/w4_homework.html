@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4 - html</title>
+</head>
+<style>
+    table {
+        width: 500px;
+        border: 2px;
+        margin-top: 30px;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    th, td {
+        padding: 5px;
+        border-bottom: 1px solid #f0f87d;
+      }
+    tr:nth-child(1) {
+      background-color: #7d9af8;
+    }
+    tr:nth-child(even) { 
+        background-color: #bef5d5;
+      }
+    input:focus {
+        border: 2px solid rgb(202, 252, 110);
+      }
+     body {
+        font-family: 'Helvetica Neue',Helvetica,Arial;
+      }
+    #title {
+        font-size: 36px;
+        text-decoration: underline;
+      }
+    .content {
+        background-color: rgb(186, 227, 247);
+      }
+    #btn:hover {
+        background-color: #f3ecb1;
+        color: rgb(31, 21, 21);
+        border-radius: 5px;
+      }
+    div.content {
+        border: 2px dashed rgb(17, 24, 8);
+        text-align: left;
+        padding: 10px;
+        width: 476px;
+    }
+    li {
+        margin: 5px 0;
+    }
+    body {
+        background-color: #d4bbf1;
+    }
+    a {
+      text-decoration: none;      
+      color:rgb(51, 173, 81)
+    }
+    .header {
+      font-size: 20px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    caption {
+      margin-bottom: 5px;
+    }
+    .love {
+      color:rgb(51, 173, 81)
+    }
+    .hobby {
+      color:rgb(190, 123, 34)
+    }
+</style>
+<body>
+    
+    <h3 id="title">自我介紹</h3>
+    <div class="content">
+        大家好，我是OOO。
+    </div>
+    <h3 class="header">我的最愛</h3>
+    <ul class="love">
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+    </ul>
+    <h3 class="header">我的興趣</h3>
+    <ul class="hobby">
+        <li>打籃球</li>
+        <li>聽音樂</li>
+    </ul>
+    <h3 class="header">和我聯絡</h3>
+    <div class="content">
+        想說的話：<input type="text"/> <button id="btn">送出</button>
+    </div>
+    <div class="score">
+        <table>
+            <caption class="header">我的成績</caption>
+            <tr>
+                <th>科目</th>
+                <th>分數</th>
+                <th>排名</th>
+            </tr>
+            <tr>
+                <td>國文</td>
+                <td>90</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>數學</td>
+                <td>98</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>英文</td>
+                <td>75</td>
+                <td>19</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

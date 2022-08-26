@@ -1,0 +1,56 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS';
+    background-color: cornsilk;
+    margin: auto auto;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+}
+.bg img {
+    height: 100%;
+    width: 100%;
+}
+.image {
+    margin: auto 30px;
+    width: 400px;
+}
+.link {
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+h1 {
+    color: rgb(216, 116, 116);
+    text-align: center;
+}
+.title {
+    color:rgb(47, 109, 167);
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 30px;
+}
+li {
+   margin: 10px 30px;
+}
+
+.timetable { 
+    background-color: rgb(185, 208, 238);
+    text-align: center;
+    margin: 10px auto;
+}
+caption {
+    color: #d3cfc8; 
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+td { 
+    width: 105px;
+    height: 55px;
+}
+.week {
+    background-color:rgb(245, 243, 164);
+}

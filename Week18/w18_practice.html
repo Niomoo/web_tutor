@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function Player(name, hp, gender) {
+            this.name = name;
+            this.gender = gender;
+            this.hp = hp;
+            this.status = function() {
+                console.log(this.name + '目前血量' + this.hp);
+            }
+            this.rest = function() {
+                console.log(this.name + '決定休息!回復1滴血!');
+                this.hp++;
+            }
+            this.talk = function() {
+                console.log('我叫' + this.name + '我是' + this.gender);
+            }
+            this.hurt = function() {
+                console.log(this.name + '受傷了!扣了5滴血!');
+                this.hp -= 5;
+            }
+        }
+        let playerA = new Player('Amy', 100, '女生');
+        let playerB = new Player('Jason', 100, '男生');
+        let playerC = new Player('Charlie', 100, '男生');
+        let playerD = new Player('Marry', 100, '女生');
+
+        playerA.talk();
+        playerB.talk();
+        playerC.talk();
+        playerD.talk();
+
+        playerA.hurt();
+        playerB.hurt();
+        playerC.rest();
+
+        playerA.rest();
+
+        playerA.status();
+        playerB.status();
+        playerC.status();
+        playerD.status();
+
+    </script>
+</body>
+
+</html>

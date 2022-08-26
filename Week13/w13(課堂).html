@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n1 = Number(prompt("存款金額", "10000"));
+        var n2 = (prompt("請輸入提款金額", ""));
+        n2 = Number(n2);
+        if(n2 < 1000){
+            var op = alert("金額太小無法領取", "");
+            var result;
+            if(op == "+"){
+                result = n1 + n2;
+            }else if(op == "-"){
+                result = n1 - n2;
+            }else if(op == "*"){
+                result = n1 * n2;
+            }else if(op == "/"){
+                result = n1 / n2;
+            }else{
+                alert("Error");
+            }
+            alert(result);
+        // }else if(n2 = 100 ~ 10000){
+        //     var r1;
+        //     var r2;
+        //     if(n1 % 2 ==0)
+        }
+    </script>
+</body>
+</html>

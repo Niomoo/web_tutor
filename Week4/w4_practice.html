@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4 - html</title>
+  <style>
+      body {
+          font-family: 'Helvetica Neue',Helvetica,Arial;
+          background-color: rgb(245, 222, 192);
+      }
+      h3 {
+          font-size: 20px;
+          text-decoration: underline;
+          color:rgb(131, 89, 12);
+      }
+      div.content {
+          padding: 10px;
+          border: 1px dashed #888888;
+          width: 478px;
+      }
+      #btn {
+          border: 1px solid #888888;
+          background-color: rgb(253, 253, 253);
+          border-radius: 5px;
+      }
+      #btn:hover {
+          background-color: rgb(90, 88, 88);
+          color:rgb(253, 253, 253);
+          border-radius: 5px;
+      }
+      input:focus {
+          border: 2px solid #f0604d;
+      }
+      .favorite li{
+          color:rgb(29, 128, 158);
+          margin: 5px 0px;
+      }
+      a:link{
+          text-decoration: none;
+          color:rgb(29, 128, 158);
+      }
+      .hobby li{
+          color:rgb(179, 81, 218);
+          margin: 5px 0px;
+      }
+      table {
+          margin-top: 30px;
+          width: 500px;
+          border-collapse: collapse;
+          text-align: center;
+      }
+      caption {
+          color: rgb(131, 89, 12);
+          padding: 5px;
+          font-size: 20px;
+          text-decoration: underline;
+          font-weight: bold;
+      }
+      td {
+          padding: 5px;
+          border-bottom: 1px solid rgb(134, 128, 110);
+      }
+      tr:nth-child(1) {
+          font-weight: bold;
+          background-color: rgb(226, 156, 156);
+      }
+      tr:nth-child(even) {
+          background-color: rgb(201, 204, 204)
+      }
+  </style>
+</head>
+<body>
+    
+    <h3>自我介紹</h3>
+    <div class="content">
+        大家好，我是OOO。
+    </div>
+    <h3>我的最愛</h3>
+    <ul class="favorite">
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="http://www.facebook.com">Facebook</a></li>
+    </ul>
+    <h3>我的興趣</h3>
+    <ul class="hobby">
+        <li>打籃球</li>
+        <li>聽音樂</li>
+    </ul>
+    <h3>和我聯絡</h3>
+    <div class="content">
+        想說的話：<input type="text" /> <button id="btn">送出</button>
+    </div>
+    <div class="score">
+        <table>
+            <caption>我的成績</caption>
+            <tr>
+                <td>科目</td>
+                <td>分數</td>
+                <td>排名</td>
+            </tr>
+            <tr>
+                <td>國文</td>
+                <td>90</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>數學</td>
+                <td>98</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>英文</td>
+                <td>75</td>
+                <td>19</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

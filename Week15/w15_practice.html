@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function isBig(n1, n2) {
+            let big;
+            if(n1 > n2) {
+                big = n1;
+            } else if(n1 < n2) {
+                big = n2;
+            } else {
+                big = n1;
+            }
+            alert(big + " 比較大");
+            return big;
+        }
+        let x1 = Number(prompt("請輸入第一個數字",""));
+        let x2 = Number(prompt("請輸入第二個數字", ""));
+        let n = isBig(x1, x2);
+        for(let i = 0;i < 5;i++) {
+            let n1 = n;
+            let n2 = Number(prompt("請再輸入一個數字", ""));
+            n = isBig(n1, n2);
+        }
+    </script>
+</body>
+</html>

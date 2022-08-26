@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var money = 10000;
+        while(true){
+            var action = prompt("Enter an action(1: 提款, 2: 存款, 3: 查看)", "");
+            if(action == "1") {                 // 提款
+                var input = Number(prompt("Enter the money: ", ""));
+                if(input < 100) {               // input < 100
+                    alert("input < 100");
+                } else if(input <= money) {     // input = 100~10000
+                    alert("input = 100~10000");
+                } else {                        // input > 10000
+                    alert("input > 10000");
+                }
+            } else if(action == "2") {          // 存款
+
+            } else if(action = "3") {           // 查詢餘額
+
+            } else {                            // 錯誤
+
+            }
+        }
+
+        // var a = 5, b = 2, c = 3;
+        // c = a*b;
+        // alert(c);
+        // c = b*c;
+        // alert(c);
+        // c = a*c;
+        // alert(c);
+        // c = multiply(a, b);
+        // multiply(b, c);
+        // multiply(a, c);
+
+        // function multiply(n1, n2){
+        //     alert(n1 * n2);
+        //     return n1*n2;
+        // }
+
+    </script>
+</body>
+</html>

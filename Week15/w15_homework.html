@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let flag = false;
+        let ans = 59;
+        let n1 = 0;
+        let n2 = 100;
+        function isBig(n) {
+            let hint = "";
+            if(n > ans) {
+                n2 = n;
+                hint = "小一點！"
+            } else if(n < ans) {
+                n1 = n;
+                hint = "大一點！"
+            } else {
+                flag = true;
+            }
+            return hint;
+        }
+        while(!flag) {
+            let n = Number(prompt("請輸入一個介於 "+ n1 +" ~ "+ n2 + " 的數字", ""));
+            let s = isBig(n);
+            if(flag == false) {
+                alert(s + "答案在" + n1 + "~" + n2 + "之間");
+            } else {
+                alert("答對了！")
+            }    
+        }
+    </script>
+</body>
+</html>

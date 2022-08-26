@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Week 5 - html</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: rgb(249, 249, 195);
+            font-family: "Helvetica Neue",Helvetica;
+        }
+        .head {
+            background-color: rgb(71, 77, 129);
+            color: white;
+            padding: 10px;
+            display: flex;
+        }
+        .left {
+            flex: none;
+            border: 1px solid white;
+        }
+        .right {
+            flex: auto;
+            border: 1px solid rgb(238, 121, 121);
+            display: flex;
+            justify-content: flex-end;
+        }
+        .right div {
+            margin: 0 10px;
+        }
+        .website {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            height: 1000px;
+            display: flex;
+            align-items: center;
+            /* flex-direction: column; */
+            /* justify-content: flex-start; */
+            /* align-items: center; */
+        }
+        .box {
+            background-color: rgb(231, 230, 230);
+            width: 280px;
+            height: 400px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box:nth-child(1) {
+            align-self: flex-start;
+        }
+        .box:nth-child(2) {
+            background-color: rgb(197, 170, 223);
+            align-items: center;
+        }
+        .box:nth-child(3) {
+            align-self: flex-end;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        @media screen and (max-width: 1200px) {
+            .website {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="left">寵物</div>
+        <div class="right">
+            <div>選單一</div>
+            <div>選單二</div>
+            <div>選單三</div>
+        </div>
+    </div>
+
+    <div class="website">
+        <div class="box">
+            <div class="title">貓咪</div>
+            <div class="content">
+            貓，通常指家貓，為小型貓科動物。根據遺傳學及考古學分析，人類養貓的紀錄可追溯至10,000年前的新月沃土地區，古埃及人飼養貓的紀錄可追溯至3,600年前，目的可能為捕鼠及其他齧齒目動物，以防止牠們吃掉谷物。現在，貓成為世界上最為廣泛的寵物之一，飼養率僅次於狗，但同時也威脅着很多原生鳥類、齧齒類的生存，是世界百大外来入侵種之一。長期飼育的貓平均壽命為12年以上，歷史上最長壽的貓則達38歲。
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="title">狗</div>
+            <div class="content">
+            狗，一種常見的犬科哺乳動物，與狼為同一種動物，生物學分類上是狼的一個亞種。狗是人類最早馴養的一个物種。有人飼養的稱為家犬，無人飼養的狗常被稱為「野狗」或「流浪狗」，可能對環境與其他生物造成影響，是世界百大外来入侵種之一。狗的壽命最多可超過二十年，平均則為十數年，與貓的平均壽命相近。若無發生意外，平均壽命以小型犬為長。
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="title">老鼠</div>
+            <div class="content">
+            鼠，又稱老鼠或耗子，即鼠總科，是一種屬於囓齒類的總科，其中含有倉鼠、沙鼠、大鼠，以及其他親緣動物。牠們廣泛分佈於南極以外的各個大陸。由於難以測定各分類群之間的關係，因此也有文獻將所有鼠總科皆歸類在鼠科之下。目前依據分子種系發生學研究所作出的次分類，共有約280個屬，以及至少1300個種。牠們是少數與人類保持密切聯繫而繁盛的動物類群之一，這些動物幾乎在世界各國皆可發現，其中有一部分也是重要的生物學模式生物，對人類的實驗與研究有很大的幫助。除此之外，某些鼠類也是寵物鼠。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

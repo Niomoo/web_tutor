@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let grades = [75, 50, 60, 80];
+        let total = 0; 
+        for(let i = 0; i < grades.length; i++) {
+            total = total + grades[i]; 
+            // 0 + 75 = 75
+            // 75 + 50 = 125
+            // 125 + 60 = 185
+            // 185 + 80 = 245
+        }
+        console.log("全班的平均是：" + total/grades.length);
+    </script>
+</body>
+</html>

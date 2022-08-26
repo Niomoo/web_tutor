@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let objA = {
+            name: 'Amy',
+            age: 28,
+            gender: 'female',
+            talk: function() {
+                console.log('我是' + this.name + '，今年' + this.age + '歲');
+            }
+        };
+        let objB = {
+            name: 'Jason',
+            age: 25,
+            gender: 'male',
+            talk: function() {
+                console.log('我是' + this.name + '，今年' + this.age + '歲');
+            }
+        };
+        let objC = {
+            name: 'Charlie',
+            age: 17,
+            gender: 'male',
+            talk: function() {
+                console.log('我是' + this.name + '，今年' + this.age + '歲');
+            }
+        }
+        let objD = {
+            name: 'Marry',
+            age: 33,
+            gender: 'female',
+            talk: function() {
+                console.log('我是' + this.name + '，今年' + this.age + '歲');
+            }
+        }
+        objA.talk();
+        objB.talk();
+        objC.talk();
+        objD.talk();
+        
+        let maxAge = 0;
+        let maxName = '';
+        if (objA.age > maxAge) {
+            maxAge = objA.age;
+            maxName = objA.name;
+        }
+        if (objB.age > maxAge) {
+            maxAge = objB.age;
+            maxName = objB.name;
+        }
+        if (objC.age > maxAge) {
+            maxAge = objC.age;
+            maxName = objC.name;
+        }
+        if (objD.age > maxAge) {
+            maxAge = objD.age;
+            maxName = objD.name;
+        }
+        console.log('年紀最大的是'+ maxName + '，他'+ maxAge + '歲')
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fff3cb;
+}
+nav {
+    display: flex;
+}
+nav > .logo {
+    flex: none;
+    width: 100px;
+    background-color: #ffcccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > .menu {
+    flex: auto;
+    background-color: #ccccff;
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    flex: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(175, 221, 249);
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.button:hover {
+    background-color: rgb(175, 221, 249);
+    color:rgb(255, 255, 255);
+}
+.button:nth-child(3) {
+    background-color: rgb(175, 221, 249);
+}
+nav > .user {
+    flex: none;
+    width: 200px;
+    background-color: #ccffcc;
+}
+
+main {
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; */
+}
+main > .item {
+    background-color: #ffcccc;
+    flex: none;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+main > .item:first-child{
+    align-items: flex-start;
+}
+main > .item:nth-child(2){
+    align-items: center;
+}
+main > .item:nth-child(3){
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main > .item {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 500px) {
+    main > .item {
+        width: 90%;
+    }
+}

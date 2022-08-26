@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var i, f1 = 0;
+        document.write("<table border=1 cellpadding=3>")
+        for(i = 0; i <= 10; i++) {
+            f1 = i + f1;
+            if (i == 0) {
+                document.write("<tr>");
+                    document.write("<td>n</td>");
+                    document.write("<td>sum</td>");
+                document.write("</tr>");
+            }
+            document.write("<tr>");
+                document.write("<td>"+ i +"</td>");
+                document.write("<td>"+ f1 +"</td>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        document.write("<br>");
+        var f0 = 0, f1 = 1, f2;
+        document.write("<table border=1 cellpadding=3>")
+        for(i = 0; i <= 10; i++) {
+            if (i == 0) {
+                document.write("<tr>");
+                    document.write("<td>n</td>");
+                    document.write("<td>f(n)</td>");
+                document.write("</tr>");
+                document.write("<tr>");
+                    document.write("<td>"+ i +"</td>");
+                    document.write("<td>"+ f0 +"</td>");
+                document.write("</tr>");
+            } else if (i == 1) {
+                document.write("<tr>");
+                    document.write("<td>"+ i +"</td>");
+                    document.write("<td>"+ f1 +"</td>");
+                document.write("</tr>");
+            } else {
+                f2 = f0 + f1;
+                f0 = f1;
+                f1 = f2;
+                document.write("<tr>");
+                    document.write("<td>"+ i +"</td>");
+                    document.write("<td>"+ f1 +"</td>");
+                document.write("</tr>");
+            }
+        }
+        document.write("</table>");
+    </script>    
+</body>
+</html>
