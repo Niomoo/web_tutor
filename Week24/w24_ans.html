@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /* 
+         * Q1. 請寫一個叫 getSum 的函式，傳入一個陣列，回傳陣列中的所有數字總和
+         */
+
+        function getSum(arr) {
+
+            let sum = 0; // sum 表示總和
+
+            // 以下開始寫
+            let i = 0;
+            for(i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        /* 
+         * Q2. 請寫一個叫 findSmallCount 的函式，傳入一個陣列跟一個數字 n，回傳有多少個數小於 n
+         */
+
+        function findSmallCount(arr, n) {
+
+            let count = 0; // count 表示有多少個數小於 n
+
+            // 以下開始寫
+            let i = 0;
+            for(i = 0; i < arr.length; i++) {
+                if(arr[i] < n) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        /* 
+         * Q3. 請寫一個叫 findSmallerTotal 的函式，傳入一個陣列跟數字 n，回傳陣列裡面所有小於 n 的數的總和
+         */
+
+        function findSmallerTotal(arr, n) {
+
+            let total = 0; // total 表示小於 n 的數之總和
+            
+            // 以下開始寫
+            let i = 0;
+            for(i = 0; i < arr.length; i++) {
+                if(arr[i] < n) {
+                    total += arr[i];
+                }
+            }
+            return total;
+        }
+        
+        /* 
+         * Q4. 請寫一個叫 findAllSmall 的函式，傳入一個陣列跟數字 n，回傳所有小於 n 的數的陣列(照原陣列順序)
+         */
+
+        function findAllSmall(arr, n) {
+
+            let returnArr = []; // returnArr 表示所有小於 n 的數的陣列
+
+            // 以下開始寫
+            let i = 0;
+            for(i = 0; i < arr.length; i++) {
+                if(arr[i] < n) {
+                    returnArr.push(arr[i]);
+                }
+            }
+            return returnArr;
+        }
+
+
+    </script>
+</body>
+
+</html>
