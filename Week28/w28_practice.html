@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 28</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function change() {
+            document.body.innerHTML = "嗨我是一串文字";
+        }
+        function go() {
+            window.location.href = "https://www.google.com";
+        }
+        function look() {
+            alert("螢幕大小為: " + window.screen.width + "x" + window.screen.height + "\n視窗大小為: " + window.innerWidth + "x" + window.innerHeight);
+        }
+
+
+    </script>
+</body>
+
+<!-- 寫一個改變顏色的 button -->
+<button onclick="change();">Change</button>
+<button onclick="go();">Go</button>
+<button onclick="look();">Look</button>
+
+</html>
