@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /* 
+         * Q1. 請寫一個叫 findUpper 的函式，傳入一串英文，並回傳這個字傳的第一個大寫字母跟他的位置，若沒有則回傳 -1
+         */
+
+        function findUpper(s) {
+            
+            let i = 0;
+            // 以下開始寫
+            for(i = 0; i < s.length; i++) {
+                let r = '';
+                if(s[i] == s[i].toUpperCase()) {
+                    r = s[i] + ' ' + (i+1);
+                    return r;
+                }
+            }
+            return -1;
+        }
+
+        /* 
+         * Q2. 請寫一個叫 findAllUpper 的函式，傳入一串英文，並回傳一個存放這個字串的所有大寫字母與位置的陣列，若沒有則回傳空陣列
+         */
+
+        function findAllUpper(s) {
+            
+            let i = 0;
+            let arr = [];
+            // 以下開始寫
+            for (i = 0; i < s.length; i++) {
+                let r = '';
+                if (s[i] == s[i].toUpperCase()) {
+                    r = s[i] + ' ' + (i + 1);
+                    arr.push(r);
+                }
+            }
+            return arr;
+        }
+        
+        /*
+         * Q3. 請寫一個叫 findAverage 的函式，計算使用者輸入的數字平均
+         */
+        
+        function findAverage() {
+            let flag = false;
+            let num = [];
+            let sum = 0;
+            while (!flag) {
+                let n = Number(prompt("Enter a number", ""));
+                if (n == 0) {
+                    flag = true;
+                    alert("The first number is " + num[0] + " and the last number is " + num[num.length - 1]);
+                    alert("The average is " + sum / num.length);
+                } else {
+                    num.push(n);
+                    sum += n;
+                }
+            }
+        }
+
+        /*
+         * HW. 請寫一個叫 table 的函式，接收一個數字 n，印出 n*1 ~ n*9 的結果並透過陣列回傳
+         */
+        
+        function table(n) {
+            let arr = [];         // arr 表示回傳陣列  
+            // 以下開始寫
+            let i;
+            let s = ''
+            for(i = 1; i <= 9; i++) {
+                s = (n + '*' + i + '=' + (n*i));
+                arr.push(s);
+            }
+            return arr;
+        }     
+        
+    </script>
+    <button onclick="findAverage()">計算平均</button>
+</body>
+
+</html>
