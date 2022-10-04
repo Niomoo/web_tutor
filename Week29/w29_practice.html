@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 這裡寫 css */
+        
+    </style>
+</head>
+<body>
+    <!-- 這裡寫 html 架構 -->
+    <div>
+        <span onclick="goAbout();">關於我</span>
+        <span onclick="goExp();">我的經歷</span>
+    </div>
+    <hr/>
+    <div id="about">大家好，我是劉育瑄！</div>
+    <div id="exp" style="display: none;">就讀國立成功大學資訊工程所</div>
+    <button onclick="change();">Change</button>
+    <script type="text/javascript">
+        // 這裡寫 javascript
+        function goAbout() {
+            let aboutDiv = document.querySelector("#about");
+            let expDiv = document.querySelector("#exp");
+            aboutDiv.style.display = "block";
+            expDiv.style.display = "none";
+        }
+        function goExp() {
+            let aboutDiv = document.querySelector("#about");
+            let expDiv = document.querySelector("#exp");
+            aboutDiv.style.display = "none";
+            expDiv.style.display = "block";
+        }
+        function change() {
+            document.body.style.backgroundColor = "#eee399";
+            document.body.style.fontSize = "30px";
+        }
+    </script>
+</body>
+</html>

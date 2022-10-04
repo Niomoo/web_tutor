@@ -11,22 +11,37 @@
         // 認識內建的 window 物件 (HTML DOM 結構的最上層)
         console.log(window);
         // 取得視窗的寬度和高度
-        // 結合螢幕的寬度和高度
+        console.log("視窗: " + window.innerWidth + "x" + window.innerHeight);
         // 透過 screen 物件，取得螢幕尺寸
+        console.log("螢幕: " + window.screen.width + "x" + window.screen.height);
         // 取得網址列的內容
+        console.log(window.location.href);
         // 更改網址列的內容（跳轉網頁）
+        // window.location.href = "https://www.google.com";
 
         // 認識 document 物件
+        console.log(document);
         // 取得網頁標題
+        console.log(document.title);
         // 更改網頁標題
+        document.title = "今天天氣真好";
         // 取得 body 標籤
+        console.log(document.body);
+        console.dir(document.body);
         // 更改網頁主畫面的內容（body 標籤的內文）
+        document.body.innerHTML = "寫程式好快樂！";
         
         // 定義改變顏色的 function
+        function changeColor() {
+            document.body.bgColor = "#000000";
+        }
+        function newButton() {
+            document.body.innerHTML = "<button>我是新的按鈕</button>";
+        }
 
     </script>
+    <!-- 寫一個改變顏色的 button -->
+    <button onclick="changeColor();">Change</button>
+    <button onclick="newButton();">Add button</button>
 </body>
-
-<!-- 寫一個改變顏色的 button -->
-
 </html>
