@@ -22,15 +22,13 @@
     <button onclick="change();">Change</button>
     <script type="text/javascript">
         // 這裡寫 javascript
+        let aboutDiv = document.querySelector("#about");
+        let expDiv = document.querySelector("#exp");
         function goAbout() {
-            let aboutDiv = document.querySelector("#about");
-            let expDiv = document.querySelector("#exp");
             aboutDiv.style.display = "block";
             expDiv.style.display = "none";
         }
-        function goExp() {
-            let aboutDiv = document.querySelector("#about");
-            let expDiv = document.querySelector("#exp");
+        function goExp() {;
             aboutDiv.style.display = "none";
             expDiv.style.display = "block";
         }
