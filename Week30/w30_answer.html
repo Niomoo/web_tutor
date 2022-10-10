@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 30</title>
+    <style type="text/css">
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="selectID()">用ID取得</button>
+    <button onclick="selectTag()">用tag取得</button>
+    <button onclick="selectClass()">用class取得</button>
+    <div id="demo" class="test">測試</div>
+    
+    <hr/>
+    <div onclick="toggleMenu(1)">選單標題1</div>
+    <ul id="menu-1">
+        <li>項目1-1</li>
+        <li>項目1-2</li>
+        <li>項目1-3</li>
+    </ul>
+    <div onclick="toggleMenu(2)">選單標題2</div>
+    <ul id="menu-2">
+        <li>項目2-1</li>
+        <li>項目2-2</li>
+        <li>項目2-3</li>
+    </ul>
+    <div onclick="toggleMenu(3)">選單標題3</div>
+    <ul id="menu-3">
+        <li>項目3-1</li>
+        <li>項目3-2</li>
+        <li>項目3-3</li>
+    </ul>
+
+    <script type="text/javascript">
+        function selectID() {
+            document.getElementById("demo").innerText = "ID取得";
+        }
+        function selectTag() {
+            document.getElementsByTagName("div")[0].innerText = "tag取得";
+        }
+        function selectClass() {
+            document.getElementsByClassName("test")[0].innerText = "class取得";
+        }
+        function toggleMenu(number) {
+            let menu = document.getElementById("menu-" + number);
+            menu.classList.toggle("hide");
+        }
+    </script>
+</body>
+</html>
