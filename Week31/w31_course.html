@@ -7,6 +7,17 @@
     <title>Week 31</title>
 </head>
 <body>
-    
+    <div id="time"></div>
+    <hr/>
+    <div id="math"></div>
+
+    <script type="text/javascript">
+        const d = new Date();
+        document.getElementById("time").innerHTML = d.toString();
+        document.getElementById("time").innerHTML += "<br>" + d.getFullYear() + "年" + d.getMonth() + "月" + d.getDate() + "日";
+        
+        const num = Math.round(Math.random()*10) + 1;
+        document.getElementById("math").innerHTML = "數字：" + num;
+    </script>
 </body>
 </html>
