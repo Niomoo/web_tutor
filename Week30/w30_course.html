@@ -5,24 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 30</title>
+    <style type="text/css">
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="test">測試</div>
-    <div>選單標題1</div>
-    <ul>
+    <div id="test" class="try">測試</div>
+    <button onclick="change();">Change</button>
+    
+    <div onclick="toggleMenu(1);">選單標題1</div>
+    <ul id="menu-1" class="hide">                    <!-- 一開始不出現 style="display: none;" -->
         <li>項目1-1</li>
         <li>項目1-2</li>
         <li>項目1-3</li>
     </ul>
+
     <script type="text/javascript">
-        function toggleMenu() {
-            let menu = document.getElementById("menu");
-            if(menu.style.display="none") {
-                menu.style.display="block";               // 顯示選單
-            } else {
-                menu.style.display="none";                // 隱藏選單
-            }
+        function change() {
+            // document.getElementById("test").innerHTML = "用ID取得";
+            // document.getElementsByTagName("div")[0].innerText = "用tag取得";
+            document.getElementsByClassName("try")[0].innerText = "用class取得";
         }
+
+        function toggleMenu(number) {
+            let ele = document.getElementById("menu-" + number);
+            ele.classList.toggle("hide");                   // 增加 or 減少 hide class
+
+            // if(ele.style.display == "none") {
+            //     ele.style.display = "block";
+            // } else {
+            //     ele.style.display = "none";
+            // }
+        }
+
     </script>
 </body>
 </html>
