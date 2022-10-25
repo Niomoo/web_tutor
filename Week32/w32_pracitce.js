@@ -15,3 +15,15 @@ function sub(num) {
         scoreDiv.style.color = "red";
     }
 }
+
+function randomScore() {
+    for (let i = 1; i <= 3; i++) {
+        let score = Math.floor(Math.random() * 100) + 1;
+        document.getElementById("score" + i).innerText = score;
+        if(score <= 60) {
+            document.getElementById("score" + i).style.color = "red";
+        } else {
+            document.getElementById("score" + i).style.color = "#000000";
+        }
+    }
+}
