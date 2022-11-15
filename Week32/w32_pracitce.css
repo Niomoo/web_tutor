@@ -1,7 +1,22 @@
 th, td {
     text-align: center;
+    border: 2px solid #8d8d8d;
+    padding: 5px;
 }
 
 table {
     margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) { 
+    background-color: #ffdda5;
+}
+
+tr:nth-child(1) {
+    background-color: #a6bafc;
+}
+
+.random {
+    text-align: center;
 }
