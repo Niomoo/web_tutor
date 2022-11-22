@@ -13,9 +13,7 @@ let playerB = new Player();
 
 function fight(id) {
     if(id == 1) {
-        if(playerA.hp > 0) {
-            playerA.hurt();
-        }
+        playerA.hurt();
         if(playerA.hp <= 50) {
             document.getElementById("blood1").style.color = 'red';
             document.getElementById("bar1").style.backgroundColor = "red";
@@ -27,16 +25,14 @@ function fight(id) {
         }
     }
     else {        
-        if(playerB.hp > 0) {
-            playerB.hurt();
-        }
+        playerB.hurt();
         if(playerB.hp <= 50) {
             document.getElementById('blood2').style.color = 'red';
             document.getElementById("bar2").style.backgroundColor = "red";
         }
         document.getElementById("blood2").innerText = "HP: " + playerB.hp;
         document.getElementById("bar2").style.width = playerB.hp + "%";
-        if(playerB.hp <= 0) {
+        if (playerB.hp <= 0) {
             alert("Player 1 wins!");
         }
     }
@@ -46,6 +42,8 @@ function rest(id) {
     if(id == 1) {
         if(playerA.hp < 100) {
             playerA.rest();
+        } else {
+            alert("Player 1 don't need to rest!");
         }
         if(playerA.hp > 50) {
             document.getElementById("blood1").style.color = 'black';
@@ -57,6 +55,8 @@ function rest(id) {
     else {
         if (playerB.hp < 100) {
           playerB.rest();
+        } else {
+            alert("Player 2 don't need to rest!");
         }
         if(playerB.hp > 50) {
             document.getElementById("blood2").style.color = 'black';
