@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checked { 
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>第1題</li>
+        <li>第2題</li>
+    </ul>
+    <button onclick="add()">新增</button>
+</body>
+<script type="text/javascript">
+    function add() {
+        let li = document.createElement("li");          // <li></li>
+        console.log(li);
+
+        let t = "第3題";
+        console.log(t);
+        
+        t = document.createTextNode(t);
+        li.appendChild(t);
+        console.log(li);
+
+        document.getElementById("list").appendChild(li);
+    }
+
+    let list = document.getElementById("list");
+    list.addEventListener("click", function (e){        
+        console.log(e);
+        if(e.target.nodeName == "LI") {
+            console.log("li");
+            e.target.classList.toggle("checked");
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,19 @@
+ul {
+    padding: 0;
+}
+
+ul li {
+    cursor: default;
+    list-style: none;
+    background-color: blanchedalmond;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: rgb(208, 195, 175);
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #837c7c;
+}

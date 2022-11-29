@@ -1,9 +1,9 @@
-// var list = document.querySelector("ul");
-// list.addEventListener("click", function (e) {
-//     if (e.target.tagName === "LI") {
-//       e.target.classList.toggle("checked");
-//     }
-// });
+var list = document.getElementById("todo-list");
+list.addEventListener("click", function (e) {
+    if (e.target.nodeName == "LI") {
+      e.target.classList.toggle("checked");
+    }
+});
 
 let inputDiv = document.getElementById("todo-input");
 function addTodo() {
