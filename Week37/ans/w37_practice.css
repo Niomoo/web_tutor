@@ -17,3 +17,9 @@ li:hover {
     text-decoration: line-through;
     background-color: #837c7c;
 }
+
+.close {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
