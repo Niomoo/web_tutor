@@ -23,14 +23,13 @@ for(i = 0; i < close.length; i++) {
   });
 }
 
-let inputDiv = document.getElementById("todo-input");
-
 function addTodo() {
+  let inputDiv = document.getElementById("todo-input");
+  let inputValue = inputDiv.value;
   if (inputValue == "") {
     alert("請輸入待辦事項");
   } else {
     var li = document.createElement("li");
-    var inputValue = inputDiv.value;
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     document.getElementById("todo-list").appendChild(li);
