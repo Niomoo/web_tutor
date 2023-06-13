@@ -87,9 +87,30 @@
         let sortAge = inventors.sort((a, b) => (a.passed - a.year) > (b.passed - b.year) ? -1 : 1);
         console.table(sortAge);
 
-        // Q6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+        // Q6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
+        // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+        // let category = document.querySelectorAll('mw-category a');
+        // let categoryArr = Array.from(category);
+        // let returnArr = categoryArr.map((c) => c.textContent).filter((c) => c.includes('de'));
+        // console.table(returnArr);
 
+        // Q7. Sort Exercise：Sort the people alphabetically by last name
+        let sortName = people.sort((a, b) => {
+            const [aFirst, aLast] = a.split(', ');
+            const [bFirst, bLast] = b.split(', ');
+            if(aLast > bLast) return 1;
+            else return -1;
+        });
+        console.table(sortName);
 
+        // Q8. Reduce Exercise：Sum up the instances of each of these
+        const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
+        let sumData = data.reduce(((obj, item) => {
+            if(!obj[item]) obj[item] = 0;
+            obj[item] += 1;
+            return obj;
+        }), {});
+        console.table(sumData);
 
     </script>
 </body>
